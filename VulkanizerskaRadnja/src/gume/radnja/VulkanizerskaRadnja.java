@@ -3,10 +3,21 @@ package gume.radnja;
 import java.util.LinkedList;
 
 import gume.AutoGuma;
-
+/**
+ * 
+ * @author BojanDjekic
+ * @version 1.0
+ */
 public class VulkanizerskaRadnja {
+	/**
+	 * Lista objekata klase AutoGuma
+	 */
 	private LinkedList<AutoGuma> gume = new LinkedList<AutoGuma>();
-
+	/**
+	 * Dodaje gumu unetu kao parametar u listu
+	 * @param a objekat klase AutoGuma
+	 * @throws NullPointerException (ukoliko je uneti parametar null) ili RuntimeException (ukoliko je uneti parametar vec postoji u listi)
+	 */
 	public void dodajGumu(AutoGuma a) {
 		if (a == null)
 			throw new NullPointerException("Guma ne sme biti null");
@@ -14,7 +25,11 @@ public class VulkanizerskaRadnja {
 			throw new RuntimeException("Guma vec postoji");
 		gume.addFirst(a);
 	}
-
+	/**
+	 * Pronalazi sve gume modela istog kao i uneti parametar i ubacuje ih u novu listu
+	 * @param markaModel naziv modela koji se trazi
+	 * @return null ukoliko je uneti parametar null, a u suprotnom novoformiranu listu
+	 */
 	public LinkedList<AutoGuma> pronadjiGumu(String markaModel) {
 		if (markaModel == null)
 			return null;

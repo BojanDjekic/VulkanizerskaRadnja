@@ -30,7 +30,7 @@ public class AutoGuma {
 	}
 	/**
 	 * Metoda za unos modela gume
-	 * @param markaModela2
+	 * @param markaModela2 model gume koji se unosi
 	 * @throws RuntimeException u slucaju da je unet parameta null ili duzina parametra manja od 3
 	 */
 	public void setMarkaModel(String markaModel) {
@@ -47,7 +47,7 @@ public class AutoGuma {
 	}
 	/**
 	 * Metoda za unos precnika gume
-	 * @param precnik
+	 * @param precnik precnik gume koji se unosi
 	 * @throws RuntimeException u slucaju unetog precnika manjeg od 13 ili veceg od 22
 	 */
 	public void setPrecnik(int precnik) {
@@ -64,7 +64,7 @@ public class AutoGuma {
 	}
 	/**
 	 * Metoda za unos sirine gume
-	 * @param sirina
+	 * @param sirina sirina gume koja se unosi
 	 * @throws RuntimeException u slucaju unete sirine manje od 135 ili vece od 355
 	 */
 	public void setSirina(int sirina) {
@@ -81,7 +81,7 @@ public class AutoGuma {
 	}
 	/**
 	 * Metoda za unos visine gume
-	 * @param visina
+	 * @param visina visina gume koja se unosi
 	 * @throws RuntimeException u slucaju unete visine manje od 25 ili vece od 95
 	 */
 	public void setVisina(int visina) {
@@ -99,7 +99,7 @@ public class AutoGuma {
 	}
 	/**
 	 * Uporedjuje vrednosti dve gume
-	 * @return <ln>true: ako su dve gume iste</ln><ln>false: ako su dve gume razlicite</ln>
+	 * @return true ukoliko su dve gume iste, false ukoliko su dve gume razlicite</ln>
 	 */
 	@Override
 	public boolean equals(Object obj) {
