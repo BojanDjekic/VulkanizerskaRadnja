@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 import gume.AutoGuma;
 /**
- * 
+ * Klasa koja opisuje vuklanizersku radnju.
  * @author BojanDjekic
  * @version 1.0
  */

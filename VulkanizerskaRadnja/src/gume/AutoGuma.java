@@ -1,6 +1,6 @@
 package gume;
 	/**
-	 * 
+	 * Klasa koja opisuje gumu sa svim njenim karakteristikama.
 	 * @author BojanDjekic
 	 * @version 1.0
 	 *
